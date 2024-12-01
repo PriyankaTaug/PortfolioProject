@@ -1,0 +1,97 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Push the logo and button to opposite sides */
+  align-items: center; /* Center the items vertically */
+  background-color:#F3F0EE;
+  border-bottom: 0.5px solid gray;
+  padding: 10px 20px;
+  position: relative;
+  
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Centered links */
+.nav-links {
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  gap: 20px;
+  
+  width: 100%; /* Ensures the links take full available width */
+}
+
+.nav-links a {
+  color:black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #f4a261;
+}
+
+.contactus
+{
+  background-color:#046E58;
+  height: 40px;
+  border: none;
+  color:black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+ color: white;
+  right: 20px; /* Position the button to the right end */
+  border-radius: 5px;
+}
+
+/* Mobile Menu */
+.mobile-menu-icon {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* Position the button to the right end */
+}
+.logo-name
+{
+  width: 50px;
+  height: 50px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the links by default on mobile */
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .nav-links-mobile a {
+    margin: 5px 0;
+  }
+}

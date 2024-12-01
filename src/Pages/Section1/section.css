@@ -1,0 +1,48 @@
+.section-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    height:85vh;
+    background-color:#F3F0EE;
+}
+.text-section
+{
+    flex:1;
+    padding: 20px;
+    color: black;
+}
+.head-section
+{
+    font-size: 80px;
+    font-weight: 100px;
+    color: white;
+}
+.image-section
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.image
+{
+   
+    width: 80%;
+    height: 80vh;
+    border-radius: 20px;
+    
+}
+
+.image1 {
+    position: absolute;
+    top:180px;
+    left: 800px;
+    z-index: 1; /* This image is in the foreground */
+    width: 23%;
+    height: 50%;
+   
+  }
